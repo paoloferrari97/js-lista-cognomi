@@ -6,7 +6,7 @@ while (cognome == "") {
 
 //2. inseriscilo in un array con altri cognomi:
 //‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
-var lista_cognomi = ["bianchi", "neri", "rossi", "verdi", "gialli"];
+var lista_cognomi = ["bianchi", "neri", "rossi", "verdi", "gialli", "ferrari", "esempio", "cognome"];
 lista_cognomi.push(cognome);
 
 //3. stampa la lista ordinata alfabeticamente
