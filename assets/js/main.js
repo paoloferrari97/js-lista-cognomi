@@ -14,8 +14,14 @@ lista_cognomi.push(cognome);
 lista_cognomi = lista_cognomi.sort();
 console.log(lista_cognomi);
 
+var posizione_cognome = 0;
 var lista_output = "";
 for (var i = 0; i < lista_cognomi.length; i++){
-    lista_output = lista_output + "<span>" + (i+1) + "." + "</span>" + "<span class=\"capitalize\">" + " " + lista_cognomi[i] + "</span>" + "<br>";
+    lista_output = lista_output + "<span>" + (i + 1) + "." + "</span>" + "<span class=\"capitalize\">" + " " + lista_cognomi[i] + "</span>" + "<br>";
+    if (lista_cognomi[i] == cognome) {
+        posizione_cognome = (i + 1);
+    }
 }
 document.getElementById("cognomi").innerHTML = lista_output;
+document.getElementById("tuo_cognome").innerHTML = "Il tuo cognome è: " + "<span class=\"capitalize\">" + cognome + "</span>";
+document.getElementById("posizione_cognome").innerHTML = "La posizione del tuo cognome è: " + posizione_cognome;
