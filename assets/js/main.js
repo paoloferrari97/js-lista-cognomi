@@ -10,7 +10,12 @@ var lista_cognomi = ["bianchi", "neri", "rossi", "verdi", "gialli"];
 lista_cognomi.push(cognome);
 
 //3. stampa la lista ordinata alfabeticamente
+//4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
 lista_cognomi = lista_cognomi.sort();
 console.log(lista_cognomi);
 
-//4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
+var lista_output = "";
+for (var i = 0; i < lista_cognomi.length; i++){
+    lista_output = lista_output + "<div>" + (i + 1) + " " + lista_cognomi[i] + "</div>";
+}
+document.getElementById("cognomi").innerHTML = lista_output;
