@@ -16,6 +16,6 @@ console.log(lista_cognomi);
 
 var lista_output = "";
 for (var i = 0; i < lista_cognomi.length; i++){
-    lista_output = lista_output + "<div>" + (i + 1) + " " + lista_cognomi[i] + "</div>";
+    lista_output = lista_output + "<span>" + (i+1) + "</span>" + "<span class=\"capitalize\">" + " " + lista_cognomi[i] + "</span>" + "<br>";
 }
 document.getElementById("cognomi").innerHTML = lista_output;
