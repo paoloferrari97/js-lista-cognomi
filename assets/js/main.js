@@ -19,7 +19,7 @@ var lista_output = "";
 for (var i = 0; i < lista_cognomi.length; i++){
     lista_output = lista_output + "<span>" + (i + 1) + "." + "</span>" + "<span class=\"capitalize\">" + " " + lista_cognomi[i] + "</span>" + "<br>";
     if (lista_cognomi[i] == cognome) {
-        posizione_cognome = (i + 1);
+        posizione_cognome = (i + 1);  //al posto di questi potevo usare lista.indexOf(nomedacercare) e mi da la sua posizione (ovviamente partono da 0 quindi farò + 1)
     }
 }
 document.getElementById("cognomi").innerHTML = lista_output;
